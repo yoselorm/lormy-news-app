@@ -52,6 +52,7 @@ const News = () => {
             <div className='sm:grid sm:grid-cols-3'>
                 {news.map((items) => {
                     // console.log(items)
+
                     return (
                         <div key={items.id} >
                             <NewsList category={category} author={items.author} content={items.content} description={items.description} title={items.title} url={items.url} image={items.urlToImage} />
