@@ -19,7 +19,7 @@ code {
 } */
 
 .bg-image {
-  background: url('C:\Users\Yo Selorm\Desktop\ReactPractice\lormy-news-app\src\assets\newone.jpg') no-repeat center;
+  background: url('./assets/newone.jpg') no-repeat center;
   background-size: cover;
   background-blend-mode: overlay;
   background-color: #181818;

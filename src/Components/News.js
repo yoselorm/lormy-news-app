@@ -3,6 +3,7 @@ import axios from 'axios';
 import App from '../App';
 import NewsList from './NewsList';
 import newsimg from '../assets/news.jpg'
+import newone from '../assets/newone.jpg';
 
 const News = () => {
 
@@ -44,12 +45,16 @@ const News = () => {
 
                 </label>
             </div >
+            <div className='text-xl font-bold p-4'>
+                {category}
+            </div>
+
             <div className='sm:grid sm:grid-cols-3'>
                 {news.map((items) => {
                     // console.log(items)
                     return (
                         <div key={items.id} >
-                            <NewsList author={items.author} content={items.content} description={items.description} title={items.title} url={items.url} image={items.urlToImage} />
+                            <NewsList category={category} author={items.author} content={items.content} description={items.description} title={items.title} url={items.url} image={items.urlToImage} />
                         </div>
                     )
                 })}
