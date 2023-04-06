@@ -8,7 +8,7 @@ const News = () => {
 
     const [news, setNews] = useState([]);
     const [category, setCategory] = useState('');
-    const [country, setCountry] = useState('')
+    // const [country, setCountry] = useState('')
 
     const url = `https://newsapi.org/v2/top-headlines?country=us&category=${category}&apiKey=3de441a4a8a64e389fcc7ab60f2e0f57`
 
@@ -41,15 +41,7 @@ const News = () => {
                         <option value="science">Science</option>
                         <option value="business">Business</option>
                     </select>
-                    {/* <select value={country} onChange={(e) => { setCountry(e.target.value) }} className='sm:w-[5vw] h-sm:[7vh] p-2 sm:text-xl rounded-md'>
-                        <option value="general">general</option>
-                        <option value="sports">Sports</option>
-                        <option value="entertainment">Entertainment</option>
-                        <option value="health">Health</option>
-                        <option value="technology">Tech</option>
-                        <option value="science">Science</option>
-                        <option value="business">Business</option>
-                    </select> */}
+
                 </label>
             </div >
             <div className='sm:grid sm:grid-cols-3'>
